@@ -22,7 +22,7 @@ function setup() {
   loadSound(0, "");
   setFPS(60)
 }
-
+//生麦
 //毎FPS
 function mainloop() {
   if(bscene == 0) {
