@@ -29,7 +29,7 @@ function mainloop() {
     drawImg(0, 0, 0);
     setAlp(15);
     fRect(0,0,1920,1080,"white");
-    setAlp(60);
+    setAlp(100);
     fRect(460,800,1000,150,"lightskyblue");
     setAlp(100);
     drawImgS(1,460,800,1000,150);
