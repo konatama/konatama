@@ -30,7 +30,7 @@ function mainloop() {
     setAlp(15);
     fRect(0,0,1920,1080,"white");
     setAlp(60);
-    fRect(460,800,1000,150,"blue");
+    fRect(460,800,1000,150,"lightskyblue");
     setAlp(100);
     drawImgS(1,460,800,1000,150);
     if(tapC == 1 && tapX >= 460 && tapX <= 1460 && tapY >= 800 && tapY <= 950 ){
