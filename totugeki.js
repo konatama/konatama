@@ -18,9 +18,10 @@ function setup() {
   loadImg(2, "image/grassland-dot3.jpg");
   loadImg(3, "image/square-4-removebg-preview.png");
   loadImg(4, "image/coin01_gold01_1.png");
-  loadImg(5,"image/Plains-forest2.jpg")
+  loadImg(5,"image/Plains-forest2.jpg");
+  loadImg(6,"image/vsscene.jpeg")
   loadSound(0, "");
-  setFPS(60)
+  setFPS(60);
 }
 //生麦
 //毎FPS
@@ -157,6 +158,7 @@ function mainloop() {
   }
   else if(bscene == 3) {//1st
     fRect(197,852,103,103,"white");
+    vsscene(1);
   }
 
   else if(bscene == 4) {//2st
@@ -189,4 +191,7 @@ function drawBG2(spd) {
     bgX = (bgX + spd)%1920;
     drawImg(5, -bgX, 0);
     drawImg(5, 1920-bgX, 0);
+}
+function vsscene(st) {
+    drawImg(6,960,540);
 }
