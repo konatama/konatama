@@ -19,7 +19,7 @@ function setup() {
   loadImg(3, "image/square-4-removebg-preview.png");
   loadImg(4, "image/coin01_gold01_1.png");
   loadImg(5,"image/Plains-forest2.jpg");
-  loadImg(6,"image/vsscene.jpeg")
+  loadImg(6,"image/vss.pig")
   loadSound(0, "");
   setFPS(60);
 }
