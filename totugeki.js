@@ -193,5 +193,7 @@ function drawBG2(spd) {
     drawImg(5, 1920-bgX, 0);
 }
 function vsscene(st) {
+    setAlp(30)
+    fRect(0,0,1920,1080,"red")
     drawImg(6,18,300);
 }
