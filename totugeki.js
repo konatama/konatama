@@ -193,5 +193,5 @@ function drawBG2(spd) {
     drawImg(5, 1920-bgX, 0);
 }
 function vsscene(st) {
-    drawImg(6,960,540);
+    drawImg(6,18,300);
 }
