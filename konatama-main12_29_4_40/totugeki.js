@@ -164,16 +164,19 @@ function mainloop() {
     }
 
   }
-  else if(bscene == 3) {//1stvs
+  else if(bscene == 3) {//vsscene
     vsscene();
   }
+  else if(bscene == 4) {//編成画面
 
-  else if(bscene == 9) {//tatakai_hontai
+  }
+
+  else if(bscene == 5) {//tatakai_hontai
     timer_modki();
     
     
   }
-  else if(bscene == 10) {//kekka
+  else if(bscene == 6) {//結果
     fRect(0,0,1920,1080,"red");
   }
 }
@@ -194,10 +197,17 @@ function vsscene() {
     fRect(0,0,1920,1080,"#14ff89");
     //fRect(0,0,1920,1080,"red");
     setAlp(100);
-    drawImgS(6,489,96,942,888);
-    if(tapC == 1 && tapX >= 489 && tapX <= 1431 && tapY >=96 && tapY <= 984 ) {
-      bscene = 9;
+    drawImgS(6,489,20,942,888);//96
+    setAlp(10);
+    fRect(489,908,942,888,"#00bfff");
+    lineW(20);
+    setAlp(100);
+    fText("編成を変える",980,1000,100,"white");
+    sRect(489,908,942,888,"white");
+    if(tapC == 1 && tapX >= 489 && tapX <= 1431 && tapY >=20 && tapY <= 908 ) {
+      bscene = 5;
     }
+    if(tapC == 1 && tapX >= 489 && tapX <= 1431 && tapY >= 908 && tapY <= 172)
 }
 //timer
 var timehyouji = 1;
@@ -208,7 +218,7 @@ function timer_modki() {
   fText(60 - timehyouji,960,100,100,"white");
   if(time >= 10) {
     sleep(3000);
-    bscene = 10;
+    bscene = 6;
   }
 }
 
